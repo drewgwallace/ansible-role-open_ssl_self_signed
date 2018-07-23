@@ -13,8 +13,8 @@
       - include_role:
           name: drewgwallace.openssl_self_signed
         vars:
-          server_name: "my_example"
-          server_url: "url.example.com"
+          server_name: "<b>my_example</b>"
+          server_url: "<b>url.example.com</b>"
 </pre>
 
   ### Variables:
