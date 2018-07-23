@@ -6,12 +6,12 @@
 
 - name: "drewgwallace.open_ssl_self_signed | Generate Self-Signed certificate"
   local_action:
-    csr_path: "{{ cert_dir }}/{{ container_name }}.csr"
+    csr_path: "{{ cert_dir }}/{{ server_name }}.csr"
     force: "{{ force_regeneration }}"
     module: openssl_certificate
-    path: "{{ cert_dir }}/{{ container_name }}.crt"
+    path: "{{ cert_dir }}/{{ server_name }}.crt"
     privatekey_passphrase: "{{ cert_passphrase }}"
-    privatekey_path: "{{ cert_dir }}/{{ container_name }}_priv.key"
+    privatekey_path: "{{ cert_dir }}/{{ server_name }}_priv.key"
     provider: "selfsigned"
     selfsigned_digest: "sha256"
     state: present

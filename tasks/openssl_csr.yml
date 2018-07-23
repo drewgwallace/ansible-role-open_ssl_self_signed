@@ -9,14 +9,14 @@
     force: "{{ force_regeneration }}"
     mode: 0640
     module: "openssl_privatekey"
-    path: "{{ cert_dir }}/{{ container_name }}_priv.key"
+    path: "{{ cert_dir }}/{{ server_name }}_priv.key"
     size: 2048
     state: "present"
     type: "RSA"
 
 - name: "drewgwallace.open_ssl_self_signed | Generate Certificate Signing Request"
   local_action:
-    common_name: "{{ url }}"
+    common_name: "{{ server_url }}"
     country_name: "{{ cert_country }}"
     email_address: "{{ cert_email_address }}"
     force: "{{ force_regeneration }}"
@@ -25,11 +25,11 @@
     module: "openssl_csr"
     organization_name: "{{ cert_organization }}"
     organizational_unit_name: "{{ cert_organizational_unit }}"
-    path: "{{ cert_dir }}/{{ container_name }}.csr"
+    path: "{{ cert_dir }}/{{ server_name }}.csr"
     privatekey_passphrase: "{{ cert_passphrase }}"
-    privatekey_path: "{{ cert_dir }}/{{ container_name }}_priv.key"
+    privatekey_path: "{{ cert_dir }}/{{ server_name }}_priv.key"
     state: present
     state_or_province_name: "{{ cert_state }}"
     subject_alt_name:
-      - "DNS: {{ url }}"
-      - "DNS: {{ url.split('.')[0] }}"
+      - "DNS: {{ server_url }}"
+      - "DNS: {{ server_url.split('.')[0] }}"

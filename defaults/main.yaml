@@ -26,8 +26,14 @@ cert_organization: "example.com"
 # cert_state is certificate State
 cert_state: "OR"
 
+# server_name  is the name of the server (or otherwise) that will be utilizing the certificate
+server_name: my_example
+
 # force_regeneration, overwrite existing certificate files
 force_regeneration: false
+
+# server_url is the URL used for CN and SAN identity
+server_url: url.example.com
 
 
 
