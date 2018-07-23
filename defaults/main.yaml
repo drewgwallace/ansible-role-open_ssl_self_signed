@@ -2,29 +2,29 @@
 # Purpose: Declares default OpenSSL variables
 
 
-# certificate_common_name is certificate CN
-certificate_common_name: "Default certificate"
+# cert_common_name is certificate CN
+cert_common_name: "Default certificate"
 
-# certificate_country is certificate Country
-certificate_country: "US"
+# cert_country is certificate Country
+cert_country: "US"
 
-# certificate_email_address is the email address used in certificate
-certificate_email_address: "root@localhost"
+# cert_email_address is the email address used in certificate
+cert_email_address: "root@localhost"
 
-# certificate_locality is certificate Locality
-certificate_locality: "PDX"
+# cert_locality is certificate Locality
+cert_locality: "PDX"
 
 # cert_dir is the target directory that files will be output to
 cert_dir: /tmp
 
-# certificate_organizational_unit_name is certificate Organizational Unit
-certificate_organizational_unit_name: "IT.SVCS.example.com"
+# cert_organizational_unit is certificate Organizational Unit
+cert_organizational_unit: "IT.SVCS.example.com"
 
-# certificate_organization_name is certificate Organization
-certificate_organization_name: "example.com"
+# cert_organization_name is certificate Organization
+cert_organization_name: "example.com"
 
-# certificate_state is certificate State
-certificate_state: "OR"
+# cert_state is certificate State
+cert_state: "OR"
 
 # force_regeneration, overwrite existing certificate files
 force_regeneration: false
