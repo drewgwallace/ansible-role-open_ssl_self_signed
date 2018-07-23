@@ -5,10 +5,3 @@
 - include_tasks: openssl_csr.yml
 
 - include_tasks: openssl_gen_crt.yml
-
-# - local_action:
-    # module: shell "rm -f  {{ item }}.csr"
-  # args:
-    # chdir: "{{ cert_local_dir }}"
-  # with_items:
-    # - "{{ containers }}"

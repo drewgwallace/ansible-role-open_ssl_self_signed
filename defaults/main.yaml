@@ -1,6 +1,5 @@
 ---
 # Purpose: Declares default OpenSSL variables
-# Notes: 
 
 
 # certificate_common_name is certificate CN
