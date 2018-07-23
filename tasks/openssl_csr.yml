@@ -23,8 +23,8 @@
     locality_name: "{{ cert_locality }}"
     mode: 0640
     module: "openssl_csr"
-    organization_name: "{{ cert_organization_name }}"
-    organizational_unit_name: "{{ cert_organizational_unit_name }}"
+    organization_name: "{{ cert_organization }}"
+    organizational_unit_name: "{{ cert_organizational_unit }}"
     path: "{{ cert_dir }}/{{ container_name }}.csr"
     privatekey_passphrase: "{{ cert_passphrase }}"
     privatekey_path: "{{ cert_dir }}/{{ container_name }}_priv.key"
