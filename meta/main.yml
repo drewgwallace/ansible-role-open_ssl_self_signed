@@ -26,3 +26,4 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
+  role_name: openssl_self_signed
