@@ -14,8 +14,8 @@ certificate_email_address: "root@localhost"
 # certificate_locality is certificate Locality
 certificate_locality: "PDX"
 
-# certificate_dir is the target directory that files will be output to
-certificate_dir: /tmp
+# cert_dir is the target directory that files will be output to
+cert_dir: /tmp
 
 # certificate_organizational_unit_name is certificate Organizational Unit
 certificate_organizational_unit_name: "IT.SVCS.example.com"
