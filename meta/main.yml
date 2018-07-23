@@ -1,0 +1,28 @@
+---
+
+galaxy_info:
+  author: drewgwallace
+  description: Create self signed certificate.
+  galaxy_tags:
+    - web
+    - tls
+    - security
+    - certificate
+  license: MIT
+  min_ansible_version: 2.5
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Generic
+      versions:
+        - all
+    - name: GenericLinux
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
