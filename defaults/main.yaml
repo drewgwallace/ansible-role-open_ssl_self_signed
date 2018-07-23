@@ -21,7 +21,7 @@ cert_dir: /tmp
 cert_organizational_unit: "IT.SVCS.example.com"
 
 # cert_organization_name is certificate Organization
-cert_organization_name: "example.com"
+cert_organization: "example.com"
 
 # cert_state is certificate State
 cert_state: "OR"
